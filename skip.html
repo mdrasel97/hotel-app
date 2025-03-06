@@ -53,10 +53,16 @@
              <!-- right -->
               <div class="flex justify-center items-center space-x-2">
                 <p>Skip</p>
-                <button class="btn rounded-full bg-blue-500 text-white text-xl"><i class="fa-solid fa-arrow-right"></i></button>
+                <button id="arrow-btn" class="btn rounded-full bg-blue-500 text-white text-xl"><i class="fa-solid fa-arrow-right"></i></button>
               </div>
            </div>
 
     </section>
+    <script>
+      document.getElementById('arrow-btn')
+      .addEventListener('click', function(event){
+          window.open('register.html')
+      })
+  </script>
 </body>
 </html>

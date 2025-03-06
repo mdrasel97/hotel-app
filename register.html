@@ -17,10 +17,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- বাংলা -->
+    <link href="https://fonts.maateen.me/kalpurush/font.css" rel="stylesheet">
+
     <style>
         .sora {
             font-family: "Sora", sans-serif;
 
+        }
+
+        .bangla {
+            font-family: 'Kalpurush', sans-serif;
+        }
+
+        @font-face {
+            font-family: 'Shorif Sandwip';
+            src: url('./fonts/Shorif\ Sandwip.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .sandwip {
+            font-family: 'Shorif Sandwip', sans-serif;
         }
     </style>
 </head>
@@ -46,13 +65,19 @@
         </div>
         <!-- Register button  -->
         <div class="text-center">
-            <button class="btn bg-blue-500 text-white border-blue-500 w-10/12 rounded-full">
+            <button id="register-btn" class="btn bg-blue-500 text-white border-blue-500 w-10/12 rounded-full">
                 Register
             </button>
-            <div class="m-5"><a class="">Already Have an Account? <span class="link text-blue-500"> Log in</span></a></div>
+            <div class="m-5"><a class="">Already Have an Account? <span class="link text-blue-500"> Log in</span></a>
+            </div>
         </div>
-
     </section>
+    <script>
+        document.getElementById('register-btn')
+        .addEventListener('click', function(event){
+            window.open('login.html')
+        })
+    </script>
 </body>
 
 </html>
