@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <!-- daisyUi cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- foonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .sora {
+            font-family: "Sora", sans-serif;
+
+        }
+    </style>
+</head>
+
+<body class="sora bg-gray-200">
+
+    <section class="max-w-md min-h-screen mx-auto bg-white">
+        <!-- arrow button  -->
+        <div class="btn m-6 rounded-full hover:bg-blue-500 hover:text-white">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+
+        <!-- from input  -->
+        <div class="flex justify-center items-center">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <h2 class="text-2xl font-bold p-4">Let`s Get Started</h2>
+                <p class="text-gray-500 px-4">Create an account to continue</p>
+                <div class="card-body">
+                  <fieldset class="fieldset space-y-4">
+                    <input type="text" class="input w-full" placeholder="User Name" />
+                    <input type="email" class="input w-full" placeholder="Email" />
+                    <input type="password" class="input w-full" placeholder="Password" />
+                    <fieldset class="p-4 bg-base-100 rounded-box w-64">
+                        <label class="fieldset-label">
+                          <input type="checkbox" checked="checked" class="checkbox" />
+                          Remember me
+                        </label>
+                      </fieldset>
+                    <button class="btn bg-blue-500 text-white border-blue-500 w-full rounded-full">
+                        Register
+                    </button>
+                    <!-- Register button  -->
+            <div class="text-center">
+                
+                <div class="m-5"><a class="">Already Have an Account? <span class="link text-blue-500"> Log in</span></a></div>
+            </div>
+                  </fieldset>
+                </div>
+              </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
